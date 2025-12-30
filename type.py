@@ -18,3 +18,4 @@ print(tuple)
 #dictionary in python.
 dict1={"name":"sanjay","age":18,"course":"co"}
 print(dict1)
+
