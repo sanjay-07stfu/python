@@ -56,14 +56,21 @@ Expression-2 <br>
 </head>
 
 <body ng-app>
-<h1>AngularJS Expressions</h1>
+<h1>Application for AngularJS Expressions</h1>
 
-<div ng-init="a=10; b=20">
-<span>
-<!-- {{ }} this is known as interpolation markers -->
-value of a = {{a}} <br>
-value of b = {{b}} <br>
-</span>
+<div ng-init="
+student = { firstname:'Sanjay', lastname:'Yedage', rollno:67 };
+marks = [80,85,80,90,86];
+total = marks[0] + marks[1] + marks[2] + marks[3] + marks[4];
+percentage = (total / 500) * 100
+">
+
+<p>Hello {{ student.firstname + ' ' + student.lastname }}!</p>
+<p>Roll No: {{ student.rollno }}</p>
+
+<p>Total Marks: {{ total }} / 500</p>
+<p>Percentage: {{ percentage | number:2 }} %</p>
+
 </div>
 
 </body>
